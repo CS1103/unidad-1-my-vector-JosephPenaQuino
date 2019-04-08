@@ -3,4 +3,5 @@ project(MyVector)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(MyVector main.cpp Vector.cpp Vector.h Geometry.h)
+#add_executable(MyVector main.cpp Vector.cpp Vector.h Geometry.h)
+add_executable(MyVector main.cpp)

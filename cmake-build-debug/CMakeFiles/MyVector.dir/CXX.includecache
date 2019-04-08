@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/joseph/Documents/s2k191/POO2/Assignments/unidad-1-my-vector-JosephPenaQuino/Vector.cpp
+Vector.h
+/home/joseph/Documents/s2k191/POO2/Assignments/unidad-1-my-vector-JosephPenaQuino/Vector.h
+
+/home/joseph/Documents/s2k191/POO2/Assignments/unidad-1-my-vector-JosephPenaQuino/Vector.h
+
+/home/joseph/Documents/s2k191/POO2/Assignments/unidad-1-my-vector-JosephPenaQuino/main.cpp
+iostream
+-
+vector
+-
+cassert
+-
+Vector.cpp
+/home/joseph/Documents/s2k191/POO2/Assignments/unidad-1-my-vector-JosephPenaQuino/Vector.cpp
+

@@ -1,0 +1,3 @@
+/home/joseph/Documents/s2k191/POO2/Assignments/unidad-1-my-vector-JosephPenaQuino/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/joseph/Documents/s2k191/POO2/Assignments/unidad-1-my-vector-JosephPenaQuino/cmake-build-debug/CMakeFiles/MyVector.dir
+/home/joseph/Documents/s2k191/POO2/Assignments/unidad-1-my-vector-JosephPenaQuino/cmake-build-debug/CMakeFiles/edit_cache.dir
