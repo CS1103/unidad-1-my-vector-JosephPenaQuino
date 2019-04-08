@@ -20,7 +20,7 @@ int main() {
 
     assert(vec1.size() == vec2.size());
     std::cout << "Paso push_back\n";
-    /*
+
     // Borrando datos
     for (int i = 0; i < 20; ++i) {
         vec1.pop_back();
@@ -34,8 +34,8 @@ int main() {
         assert(vec1[j] == vec2.get_item(j));
     }
     std::cout << "Paso pop_back\n";
-    */
-    /*
+
+
     // Agregando datos
     auto j = 0;
     for (int i = 40; i < 20; ++i) {
@@ -51,6 +51,6 @@ int main() {
     }
 
     std::cout << "Funciono Correctamente\n";
-     */
+
     return 0;
 }

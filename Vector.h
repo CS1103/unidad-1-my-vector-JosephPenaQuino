@@ -8,6 +8,8 @@ namespace UTEC {
     class vector {
         int *_arr;
         int _size;
+        int capacity;
+        bool empty;
 
     public:
         vector();
