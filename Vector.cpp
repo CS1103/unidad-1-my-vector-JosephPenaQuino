@@ -7,22 +7,26 @@
 UTEC::vector::vector() : _arr{nullptr}, _size(0), empty(true), capacity(0) {}
 
 UTEC::vector::~vector() {
-    // Completarlo
+    delete _arr;
 }
 
 void UTEC::vector::push_back(const int &value) {
-    if (empty) {
+    if (empty)
+    {
         capacity = 1;
         _arr = new int[capacity];
         empty = false;
     }
-    else if (_size < capacity) {
+    else if (_size < capacity)
+    {
         _arr[_size] = value;
     }
-    else {
+    else
+    {
         capacity = capacity*2;
         int *temp_arr = new int[capacity];
-        for (int i = 0; i < _size; ++i) {
+        for (int i = 0; i < _size; ++i)
+        {
             int xd = _arr[i];
             temp_arr[i] = xd;
         }
@@ -32,12 +36,16 @@ void UTEC::vector::push_back(const int &value) {
     _size++;
 }
 
-void UTEC::vector::pop_back() {
-    if (!empty) {
-        if (_size -1 < capacity/2) {
+void UTEC::vector::pop_back()
+{
+    if (!empty)
+    {
+        if (_size -1 < capacity/2)
+        {
             capacity = capacity/2;
             int * temp_arr = new int[capacity];
-            for (int i = 0; i < _size-1; ++i) {
+            for (int i = 0; i < _size-1; ++i)
+            {
                 temp_arr[i] = _arr[i];
             }
             _arr = temp_arr;
@@ -52,11 +60,26 @@ void UTEC::vector::pop_back() {
 
 int UTEC::vector::size() {return _size;}
 
-int UTEC::vector::get_item(int i) {
+int UTEC::vector::get_item(int i)
+{
     if (i < _size) return _arr[i];
     else assert(_arr[i]);
 }
 
-void UTEC::vector::insert(int pos, const int &value) {
+void UTEC::vector::insert(int pos, const int &value)
+{
+    if (_size +1>= capacity) capacity *= 2;
 
+    int * new_array = new int[capacity];
+
+    for (int i = 0; i < pos; ++i)
+        new_array[i] = _arr[i];
+
+    new_array[pos] = value;
+
+    for (int i = pos+1; i < _size+2; ++i)
+        new_array[i] = _arr[i-1];
+
+    _arr = new_array;
+    _size++;
 }

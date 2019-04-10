@@ -37,15 +37,16 @@ int main() {
 
 
     // Agregando datos
-    auto j = 0;
+    auto j = 10;
     for (int i = 40; i < 20; ++i) {
-        vec1.insert(vec1.begin()+j, i);
-        vec2.insert(j++, i);
+        vec1.insert(vec1.begin()+i, j);
+        vec2.insert(i, j);
+        j++;
     }
 
     assert(vec1.size() == vec2.size());
 
-    // Verificando cada dato
+//     Verificando cada dato
     for (int i = 0; i < vec1.size(); ++i) {
         assert(vec1[i] == vec2.get_item(i));
     }
